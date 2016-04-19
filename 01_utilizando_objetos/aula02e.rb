@@ -7,4 +7,5 @@ puts t2
 t3=t2-t
 #como resolver a diferença de tempo ?
 #desafio valendo +0,5 ponto
-puts Time.at(t3)
+r = Time.at(t3).getgm
+puts "A Diferença de Tempo é de: #{r.day-1} dia(s), #{r.hour} horas, #{r.min} minutos e #{r.sec} segundos."
