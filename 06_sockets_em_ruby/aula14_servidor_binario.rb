@@ -17,6 +17,8 @@ begin
     end
     socket.syswrite(out)
   }
+rescue
+retry
 ensure
 	serverSocket.close  
 end
